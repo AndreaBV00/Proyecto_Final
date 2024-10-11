@@ -11,7 +11,7 @@ def artista_invitado(request, nombre, nacionalidad, fecha_nacimiento, texto_moti
 def inicio(request):
     return render(request, 'Inicio.html', {})
                   
-def lista_artistas(request):
+def Lista_Artistas(request):
     artistas = Artista.objects.all()
     return render(request, 'Lista_Artistas.html', {})
 
@@ -19,7 +19,7 @@ def detalle_artista(request, id):
     artista = Artista.objects.get(id=id)
     return render(request, 'Detalle_artistas.html', {})
 
-def lista_obras(request):
+def Lista_Obras(request):
     obras = Obra.objects.all()
     return render(request, 'Lista_obras.html', {})
 
@@ -27,6 +27,6 @@ def detalle_obra(request, id):
     obra = Obra.objects.get(id=id)
     return render(request, 'Detalle_Obras.html', {})
 
-def lista_exposiciones(request):
+def Lista_Exposiciones(request):
     exposiciones = Exposicion.objects.all()
     return render(request, 'Lista_Exposiciones.html', {})
