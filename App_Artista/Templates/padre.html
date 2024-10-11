@@ -28,42 +28,17 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="Lista_Artistas">Artistas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Lista_Artistas.html">Artistas</a></li>
                         <li class="nav-item"><a class="nav-link" href="Lista_Obras.html">Obras</a></li>
                         <li class="nav-item"><a class="nav-link" href="Lista_Exposiciones.html">Exposiciones</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 h-100">
-                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">El lugar para tener la información al día sobre nuestras muestras</h1>
-                        <hr class="divider" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Empieza a tener toda la información necesaria!</p>
-                        <a class="btn btn-primary btn-xl" href="#about">Acerca de nosotros</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="page-section bg-primary" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Lorem Ipsum</h2>
-                        <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, tellus ac rhoncus tincidunt, sem nunc suscipit risus, a egestas est nibh vel erat. Duis justo lectus, ultrices eu sapien a, rutrum laoreet eros. Vivamus fringilla orci vel arcu placerat ultricies. Quisque imperdiet leo a sem dignissim, eget tincidunt nisi tempor. Phasellus id aliquam lorem. Fusce eu efficitur dolor. Duis ac cursus purus. Nam sed iaculis dolor, eu finibus lectus.</p>
-                        <a class="btn btn-light btn-xl" href="Login.html">Log in</a>
-                       
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Esto es lo que va a cambiar-->
+        {% block contenidoQueCambia%}
+
+        {% endblock %}
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2024 - Andrea Brito</div></div>
