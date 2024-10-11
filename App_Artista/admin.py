@@ -1,11 +1,12 @@
 from django.contrib import admin
-from .models import Artista_invitado, Artista, Obra, Exposicion 
+from .models import *
 
 # Register your models here.
-admin.register(Artista_invitado)
 
-admin.register(Artista)
+admin.site.register(Artista_invitado)
 
-admin.register(Obra)
+admin.site.register(Artista)
 
-admin.register(Exposicion)
+admin.site.register(Obra)
+
+admin.site.register(Exposicion)
