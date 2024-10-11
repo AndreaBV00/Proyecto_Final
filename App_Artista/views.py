@@ -9,9 +9,9 @@ def artista_invitado(request, nombre, nacionalidad, fecha_nacimiento, texto_moti
     return HttpResponse(f'Artista invitado creado: {nuevo_artista.nombre}, nos comunicaremos a la brevedad con novedades sobre la exposición')
 
 def inicio(request):
-    return render(request, 'inicio.html')
-
-def lista_artistas(request):
+    return HttpResponse(request, 'inicio')
+                  
+"""def lista_artistas(request):
     artistas = Artista.objects.all()
     return render(request, 'lista_artistas.html', {'artistas': artistas})
 
@@ -29,4 +29,4 @@ def detalle_obra(request, id):
 
 def lista_exposiciones(request):
     exposiciones = Exposicion.objects.all()
-    return render(request, 'lista_exposiciones.html', {'exposiciones': exposiciones, 'exposiciones': id})
+    return render(request, 'lista_exposiciones.html', {'exposiciones': exposiciones, 'exposiciones': id})"""
