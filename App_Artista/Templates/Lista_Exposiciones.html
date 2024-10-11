@@ -1,28 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Exposiciones</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-</head>
-<body>
-    <header>
-        <h1>Lista de Exposiciones</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Exposiciones</h2>
-            <ul>
-                <!-- Aquí se listarán las exposiciones -->
-                {% for exposicion in exposiciones %}
-                    <li>{{ exposicion.nombre }} - {{ exposicion.fecha }}</li>
-                {% endfor %}
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Proyecto Final</p>
-    </footer>
-</body>
-</html>
+{% extends 'padre.html' %}
+
+
+{% block cont_cambia_1 %}
+
+{% endblock %}
+
+
+{% block cont_cambia_2 %}
+
+{% endblock %}
