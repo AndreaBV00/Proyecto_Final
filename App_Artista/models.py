@@ -35,7 +35,7 @@ class Artista_invitado(models.Model):
     texto_motivacional = models.TextField()
     link_obras = models.URLField()
     exposicion_anfitriona = models.ForeignKey(Exposicion, on_delete=models.CASCADE)
-    Email_contacto = models.EmailField()
+    Email_contacto = models.EmailField(default='default@example.com')
   
     def __str__(self):
         return self.nombre
